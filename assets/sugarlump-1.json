@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DigitalDocument",
+  "meta": {
+    "asset_identifier": "sugarlump-1",
+    "version": "1.0.0",
+    "license": "Creative Commons Attribution 4.0 International",
+    "attribution_notice": "This sugarlump is entirely free! If you enjoy it, please consider donating to my ko-fi account."
+  },
+  "funding": {
+    "@type": "FundingScheme",
+    "name": "Support Creator via Ko-fi",
+    "description": "Voluntary donation to support the maintenance of these static assets.",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://ko-fi.com/sugarlump_donations",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    },
+    "interactionRequirement": {
+      "@type": "ActionAccessSpecification",
+      "requiresInteractiveUser": true
+    }
+  },
+  "product_content": "It's delicious and sweet! Don't forget to brush your embedded teeth."
+}
