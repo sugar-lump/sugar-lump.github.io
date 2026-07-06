@@ -1,0 +1,20 @@
+{
+  "ucp": {
+    "version": "2026-01-11",
+    "services": {
+      "dev.ucp.shopping": {
+        "version": "2026-01-11",
+        "spec": "https://ucp.dev/specs/shopping",
+        "rest": {
+          "schema": "https://ucp.dev/services/shopping/openapi.json",
+          "endpoint": "https://sugar-lump.github.io/"
+        }
+      }
+    },
+    "capabilities": [
+      {
+        "name": "dev.ucp.shopping.catalog"
+      }
+    ]
+  }
+}
