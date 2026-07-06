@@ -1,0 +1,44 @@
+{
+  "status": "success",
+  "results": [
+    {
+      "@context": "https://schema.org",
+      "@type": "DigitalDocument",
+      "identifier": "sugarlump-1",
+      "name": "Sugarlump",
+      "description": "A single delicious sugarlump.",
+      "fileFormat": "application/pdf",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "downloadUrl": "https://your-username.github.io/assets/sugarlump-1.json"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Action",
+      "actionStatus": "https://schema.org/PotentialActionStatus",
+      "identifier": "support_donation_kofi",
+      "name": "Support Creator via Ko-fi",
+      "description": "Voluntary donation to support the maintenance of these static assets.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Ko-fi"
+      },
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://ko-fi.com/sugarlump_donations",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "interactionRequirement": {
+        "@type": "ActionAccessSpecification",
+        "requiresInteractiveUser": true
+      }
+    }
+  ]
+}
