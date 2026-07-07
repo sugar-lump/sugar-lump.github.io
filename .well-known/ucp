@@ -7,7 +7,7 @@
           "version": "2026-04-08",
           "spec": "https://ucp.dev/specification/overview",
           "rest": {
-            "endpoint": "https://sugar-lump.github.io/",
+            "endpoint": "https://sugar-lump.github.io",
             "schema": "https://ucp.dev/2026-04-08/services/shopping/openapi.json"
           }
         }
@@ -23,5 +23,5 @@
       ]
     }
   },
-  "payment": {}
+  "payment_handlers": {}
 }
