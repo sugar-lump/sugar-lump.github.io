@@ -23,5 +23,5 @@
       ]
     }
   },
-  "payment_handlers": {}
+  "payment": {}
 }
