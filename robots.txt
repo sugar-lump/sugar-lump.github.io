@@ -1,0 +1,35 @@
+# ==========================================
+# Robots.txt for Sugarlump Agent Storefront
+# ==========================================
+
+# 1. Global Rule: Allow all polite crawlers to see everything, 
+# but explicitly ensure they index the decentralized agent entry point.
+User-agent: *
+Allow: /
+Allow: /.well-known/ucp
+Allow: /.well-known/ucp/
+
+# 2. Specific AI & Agent Bots: Give them open access
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# 3. Reference your sitemap (if you make one later for your digital assets)
+# Sitemap: https://yourdomain.com/sitemap.xml
