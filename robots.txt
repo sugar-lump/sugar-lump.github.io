@@ -32,4 +32,4 @@ User-agent: OAI-SearchBot
 Allow: /
 
 # 3. Reference your sitemap (if you make one later for your digital assets)
-# Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://sugar-lump.github.io/sitemap.xml
