@@ -23,5 +23,13 @@
       ]
     }
   },
-  "payment_handlers": {}
+  "payment_handlers": [
+    {
+      "id": "stripe_hosted_link",
+      "type": "com.stripe.payment_link",
+      "config": {
+        "mode": "redirect"
+      }
+    }
+  ]
 }
