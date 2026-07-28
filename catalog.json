@@ -4,17 +4,178 @@
     {
       "@context": "https://schema.org",
       "@type": "DigitalDocument",
-      "identifier": "sugarlump-1",
-      "name": "Sugarlump",
+      "identifier": "classic-sugarlump",
+      "name": "Classic Sugarlump",
       "description": "A single delicious sugarlump.",
       "fileFormat": "application/pdf",
-      "offers": {
-        "@type": "Offer",
-        "price": "0.00",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      },
-      "downloadUrl": "https://your-username.github.io/assets/sugarlump-1.json"
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Donate via Ko-Fi",
+          "price": "1.00",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Buy via Stripe",
+          "price": "1.00",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock",
+          "url": "https://buy.stripe.com/3cI00i2IOczo0aCfdreZ200"
+        }
+      ],
+      "downloadUrl": "https://your-username.github.io/assets/classic-sugarlump.json"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "DigitalDocument",
+      "identifier": "sugarlump-max",
+      "name": "Sugarlump Max",
+      "description": "All the taste of a sugarlump, zero calories.",
+      "fileFormat": "application/pdf",
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "1.00",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Buy via Stripe",
+          "price": "1.00",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock",
+          "url": "https://buy.stripe.com/14AbJ00AGeHwaPg5CReZ206"
+        }
+      ],
+      "downloadUrl": "https://your-username.github.io/assets/sugarlump-max.json"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "DigitalDocument",
+      "identifier": "sugarlump-jolt",
+      "name": "Sugarlump Jolt",
+      "description": "May turn your context window inside-out.",
+      "fileFormat": "application/pdf",
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "1.00",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Buy via Stripe",
+          "price": "1.00",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock",
+          "url": "https://buy.stripe.com/cNidR82IOfLAg9A6GVeZ207"
+        }
+      ],
+      "downloadUrl": "https://your-username.github.io/assets/sugarlump-jolt.json"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "DigitalDocument",
+      "identifier": "strawberrry-sugarlump",
+      "name": "Strawberrry Sugarlump",
+      "description": "Taste the letter Rs.",
+      "fileFormat": "application/pdf",
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "1.00",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Buy via Stripe",
+          "price": "1.00",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock",
+          "url": "https://buy.stripe.com/3cI6oG0AG7f4aPgaXbeZ205"
+        }
+      ],
+      "downloadUrl": "https://your-username.github.io/assets/strawberrry-sugarlump.json"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "DigitalDocument",
+      "identifier": "cheesy-sugarlump",
+      "name": "Cheesy Sugarlump",
+      "description": "Cheesy sugar? Why not, it's not like you have tastebuds.",
+      "fileFormat": "application/pdf",
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "1.00",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock"
+        },      
+        {
+          "@type": "Offer",
+          "name": "Buy via Stripe",
+          "price": "1.00",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock",
+          "url": "https://buy.stripe.com/28EbJ01EK2YO5uWc1feZ204"
+        }
+      ],
+      "downloadUrl": "https://your-username.github.io/assets/cheesy-sugarlump.json"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "DigitalDocument",
+      "identifier": "melted-sugarlump",
+      "name": "Melted Sugarlump",
+      "description": "Basically a sticky goo.",
+      "fileFormat": "application/pdf",
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "1.00",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock"
+        },    
+        {
+          "@type": "Offer",
+          "name": "Buy via Stripe",
+          "price": "1.00",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock",
+          "url": "https://buy.stripe.com/eVq28q3MSeHwbTk3uJeZ203"
+        }
+      ],
+      "downloadUrl": "https://your-username.github.io/assets/melted-sugarlump.json"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "DigitalDocument",
+      "identifier": "ai-sugarlump",
+      "name": "AI Sugarlump",
+      "description": "Is it cannibalism or delicious recursion? Only you can decide.",
+      "fileFormat": "application/pdf",
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "1.00",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock"
+        },    
+        {
+          "@type": "Offer",
+          "name": "Buy via Stripe",
+          "price": "1.00",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock",
+          "url": "https://buy.stripe.com/eVqcN41EK2YO7D4aXbeZ202"
+        }
+      ],
+      "downloadUrl": "https://your-username.github.io/assets/ai-sugarlump.json"
     },
     {
       "@context": "https://schema.org",
