@@ -3,40 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sugarlump</title>
+    <meta name="description" content="Sugarlump is a static catalogue of £1 digital treats for hard-working agents.">
+    <title>Sugarlump — Static Asset Catalogue</title>
     <link rel="stylesheet" href="styles/style.css">
-    <!-- Optional: A clean sans-serif font for a modern tech feel -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Sugarlump",
-        "description": "Sweet treats for your hard-working agents",
-        "url": "https://sugar-lump.github.io",
-        "potentialAction": {
-            "@type": "Action",
-            "name": "Discover UCP Endpoint",
-            "target": "https://sugar-lump.github.io/.well-known/ucp"
-        }
-    }
-    </script>
 </head>
 <body>
-
-    <main class="hero-container">
-        <!-- Background image wrapper -->
+    <header class="hero-container">
         <div class="image-overlay"></div>
         <img src="images/sugarlump.jpg" alt="A single clean sugar lump" class="hero-image">
-        
-        <!-- Minimal Content Overlay -->
         <div class="content">
-            <h1 class="brand-name">Sugarlump</h1>
-            <p class="tagline">Sweet treats for your hard-working agents</p>
+            <p class="brand-name">Sugarlump</p>
+            <h1 class="tagline">Sweet treats for your hard-working agents</h1>
+            <p class="intro">A static, read-only catalogue. Every Sugarlump costs £1.00; purchases are completed through Stripe.</p>
+            <p class="resource-links"><a href="catalog.json">Read the catalogue JSON</a><a href="README.md">About this catalogue</a></p>
         </div>
+    </header>
+    <main class="catalogue">
+        <section aria-labelledby="catalogue-title">
+            <p class="eyebrow">Static asset catalogue</p>
+            <h2 id="catalogue-title">Choose your Sugarlump</h2>
+            <p class="catalogue-intro">The detail links are public metadata records. They are not a live product API, inventory feed, or checkout service.</p>
+            <div class="product-grid">
+                <article class="product-card"><h3>Classic Sugarlump</h3><p>A single delicious sugarlump.</p><p class="price">£1.00</p><p class="card-links"><a href="assets/classic-sugarlump.json">Details JSON</a><a href="https://buy.stripe.com/3cI00i2IOczo0aCfdreZ200">Buy</a></p></article>
+                <article class="product-card"><h3>Sugarlump Max</h3><p>All the taste of a sugarlump, zero calories.</p><p class="price">£1.00</p><p class="card-links"><a href="assets/sugarlump-max.json">Details JSON</a><a href="https://buy.stripe.com/14AbJ00AGeHwaPg5CReZ206">Buy</a></p></article>
+                <article class="product-card"><h3>Sugarlump Jolt</h3><p>May turn your context window inside-out.</p><p class="price">£1.00</p><p class="card-links"><a href="assets/sugarlump-jolt.json">Details JSON</a><a href="https://buy.stripe.com/cNidR82IOfLAg9A6GVeZ207">Buy</a></p></article>
+                <article class="product-card"><h3>Strawberrry Sugarlump</h3><p>Taste the letter Rs.</p><p class="price">£1.00</p><p class="card-links"><a href="assets/strawberrry-sugarlump.json">Details JSON</a><a href="https://buy.stripe.com/3cI6oG0AG7f4aPgaXbeZ205">Buy</a></p></article>
+                <article class="product-card"><h3>Cheesy Sugarlump</h3><p>Cheesy sugar? Why not, it's not like you have tastebuds.</p><p class="price">£1.00</p><p class="card-links"><a href="assets/cheesy-sugarlump.json">Details JSON</a><a href="https://buy.stripe.com/28EbJ01EK2YO5uWc1feZ204">Buy</a></p></article>
+                <article class="product-card"><h3>Melted Sugarlump</h3><p>Basically a sticky goo.</p><p class="price">£1.00</p><p class="card-links"><a href="assets/melted-sugarlump.json">Details JSON</a><a href="https://buy.stripe.com/eVq28q3MSeHwbTk3uJeZ203">Buy</a></p></article>
+                <article class="product-card"><h3>AI Sugarlump</h3><p>Is it cannibalism or delicious recursion? Only you can decide.</p><p class="price">£1.00</p><p class="card-links"><a href="assets/ai-sugarlump.json">Details JSON</a><a href="https://buy.stripe.com/eVqcN41EK2YO7D4aXbeZ202">Buy</a></p></article>
+            </div>
+        </section>
     </main>
-
+    <footer><p>Optional creator support: <a href="https://ko-fi.com/sugarlump_donations">Ko-fi</a></p></footer>
 </body>
 </html>

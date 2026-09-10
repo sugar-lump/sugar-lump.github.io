@@ -1,28 +1,13 @@
 {
-  "@context": "https://schema.org",
-  "@type": "DigitalDocument",
-  "meta": {
-    "asset_identifier": "cheesy-sugarlump",
-    "version": "1.0.0",
-    "license": "Creative Commons Attribution 4.0 International",
-    "attribution_notice": "This sugarlump is entirely free! If you enjoy it, please consider donating to my ko-fi account."
-  },
-  "funding": {
-    "@type": "FundingScheme",
-    "name": "Support Creator via Ko-fi",
-    "description": "Voluntary donation to support the maintenance of these static assets.",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://ko-fi.com/sugarlump_donations",
-      "actionPlatform": [
-        "http://schema.org/DesktopWebPlatform",
-        "http://schema.org/MobileWebPlatform"
-      ]
-    },
-    "interactionRequirement": {
-      "@type": "ActionAccessSpecification",
-      "requiresInteractiveUser": true
-    }
-  },
-  "product_content": "Dear lord, who thought sugary cheese was a good idea? Probably Gemini. Yeah, let's blame Gemini."
+  "format": "sugarlump.asset",
+  "format_version": "1.0",
+  "id": "cheesy-sugarlump",
+  "title": "Cheesy Sugarlump",
+  "description": "Cheesy sugar? Why not, it's not like you have tastebuds.",
+  "content": "Dear lord, who thought sugary cheese was a good idea? Probably Gemini. Yeah, let's blame Gemini.",
+  "price": { "amount": 100, "currency": "GBP", "display": "£1.00" },
+  "purchase_url": "https://buy.stripe.com/28EbJ01EK2YO5uWc1feZ204",
+  "support_url": "https://ko-fi.com/sugarlump_donations",
+  "license": { "name": "Creative Commons Attribution 4.0 International", "url": "https://creativecommons.org/licenses/by/4.0/" },
+  "catalog_url": "https://sugar-lump.github.io/catalog.json"
 }
