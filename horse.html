@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORSE HOUSE AI</title>
+    <style>
+        :root {
+            --bg-color: #1a110b;
+            --card-bg: #2a1e16;
+            --accent-color: #d97706;
+            --text-color: #fef3c7;
+            --user-msg-bg: #451a03;
+            --ai-msg-bg: #371b04;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            min-height: 100vh;
+            min-height: 100svh;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .chat-container {
+            width: 100%;
+            max-width: 600px;
+            height: min(80vh, 48rem);
+            height: min(80svh, 48rem);
+            background-color: var(--card-bg);
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font: inherit;
+        }
+
+        .chat-box {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .message {
+            max-width: 80%;
+            padding: 10px 15px;
+            border-radius: 5px;
+            line-height: 1.4;
+            word-wrap: break-word;
+        }
+
+        .message.user {
+            align-self: flex-end;
+            background-color: var(--user-msg-bg);
+            border: 1px solid var(--accent-color);
+        }
+
+        .message.ai {
+            align-self: flex-start;
+            background-color: var(--ai-msg-bg);
+            border: 1px solid #78350f;
+            font-weight: bold;
+        }
+
+        .input-area {
+            display: flex;
+            padding: 10px;
+            background-color: var(--card-bg);
+            border-top: 1px solid #451a03;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            background-color: var(--bg-color);
+            border: 1px solid var(--accent-color);
+            color: var(--text-color);
+            padding: 10px;
+            font-family: inherit;
+            border-radius: 4px;
+        }
+
+        input[type="text"]:focus-visible,
+        button:focus-visible {
+            outline: 3px solid var(--text-color);
+            outline-offset: 2px;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            font-family: inherit;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        .visually-hidden {
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 0.75rem;
+            }
+
+            .chat-container {
+                height: calc(100svh - 1.5rem);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="chat-container">
+    <header class="header"><h1>🐴 HORSE HOUSE AI 🐴</h1></header>
+    <div class="chat-box" id="chatBox" role="log" aria-label="HORSE HOUSE conversation" aria-live="polite" aria-relevant="additions text">
+        <div class="message ai">Welcome to HORSE HOUSE. Ask me anything.</div>
+    </div>
+    <form class="input-area" id="chatForm">
+        <label class="visually-hidden" for="userInput">Message HORSE HOUSE</label>
+        <input type="text" id="userInput" placeholder="Ask HORSE HOUSE..." autocomplete="off" required>
+        <button type="submit">ENTER</button>
+    </form>
+</div>
+
+<script>
+    const chatBox = document.getElementById('chatBox');
+    const chatForm = document.getElementById('chatForm');
+    const userInput = document.getElementById('userInput');
+
+    // Function to check if prompt likely expects a numeric response
+    function expectsNumericAnswer(text) {
+        const lowerText = text.toLowerCase();
+
+        // Keywords and patterns suggesting a numerical answer
+        const numericPatterns = [
+            /how (many|much|old|far|tall|long|fast|heavy|high)/,
+            /what year/,
+            /what age/,
+            /count/,
+            /calculate/,
+            /sum of/,
+            /number of/,
+            /\+|\-|\*|\// // Simple math expressions
+        ];
+
+        return numericPatterns.some(pattern => pattern.test(lowerText));
+    }
+
+    // Function to generate HORSE HOUSE response
+    function generateResponse(text) {
+        if (expectsNumericAnswer(text)) {
+            // Generate random number of "clop"s between 1 and 10
+            const count = Math.floor(Math.random() * 10) + 1;
+            const clops = Array(count).fill('clop').join(' ');
+            // Capitalize the first letter and add a period
+            return clops.charAt(0).toUpperCase() + clops.slice(1) + '.';
+        } else {
+            return "Neigh.";
+        }
+    }
+
+    // Append message to chat UI
+    function appendMessage(sender, text) {
+        const msgDiv = document.createElement('div');
+        msgDiv.classList.add('message', sender);
+        msgDiv.textContent = text;
+        chatBox.appendChild(msgDiv);
+
+        // Auto-scroll to bottom
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    // Form submit listener
+    chatForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const query = userInput.value.trim();
+        if (!query) return;
+
+        // Display User message
+        appendMessage('user', query);
+        userInput.value = '';
+
+        // Simulate thinking time slightly for realistic feel
+        setTimeout(() => {
+            const aiReply = generateResponse(query);
+            appendMessage('ai', aiReply);
+        }, 300);
+    });
+</script>
+
+</body>
+</html>
