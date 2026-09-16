@@ -2,14 +2,15 @@
 * { box-sizing: border-box; }
 body { margin: 0; background: #0d0d11; }
 a { color: #fff; text-underline-offset: 0.18em; }
-a:hover, a:focus-visible { color: #f6d86b; }
+a:hover, a:focus-visible { color: #92f1eb; }
 .hero-container { align-items: center; display: flex; justify-content: center; min-height: 76vh; overflow: hidden; padding: 2rem; position: relative; text-align: center; }
 .hero-image, .image-overlay { height: 100%; inset: 0; position: absolute; width: 100%; }
 .hero-image { object-fit: cover; }
 .image-overlay { background: linear-gradient(180deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.78)); }
 .content { max-width: 48rem; position: relative; z-index: 1; }
-.brand-name, .eyebrow { color: #f6d86b; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; }
-.tagline { font-size: clamp(2.4rem, 8vw, 5.2rem); letter-spacing: -0.06em; line-height: 0.98; margin: 0.8rem 0 1.25rem; }
+.brand-name, .eyebrow { color: #92f1eb; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; }
+.brand-name { font-size: clamp(3.5rem, 16vw, 7.8rem); font-weight: 800; letter-spacing: -0.06em; line-height: 0.98; margin: 0; paint-order: stroke fill; -webkit-text-stroke: 2px #000; }
+.tagline { font-size: clamp(1.6rem, 5.33vw, 3.47rem); letter-spacing: -0.06em; line-height: 0.98; margin: 0.8rem 0 1.25rem; paint-order: stroke fill; -webkit-text-stroke: 1px #000; }
 .intro { color: #e4e4e9; font-size: 1.1rem; line-height: 1.6; margin: 0 auto; max-width: 39rem; }
 .resource-links, .card-links { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1.5rem 0 0; }
 .catalogue { margin: 0 auto; max-width: 76rem; padding: 5rem 2rem; }
@@ -19,7 +20,7 @@ a:hover, a:focus-visible { color: #f6d86b; }
 .product-card { background: #181820; border: 1px solid #30303d; border-radius: 0.75rem; display: flex; flex-direction: column; min-height: 13.5rem; padding: 1.25rem; }
 .product-card h3 { font-size: 1.1rem; margin: 0; }
 .product-card p:not(.price):not(.card-links) { color: #c9c9d3; line-height: 1.5; }
-.price { color: #f6d86b; font-size: 1.35rem; font-weight: 800; margin: auto 0 0; }
+.price { color: #92f1eb; font-size: 1.35rem; font-weight: 800; margin: auto 0 0; }
 .card-links { justify-content: flex-start; }
 footer { border-top: 1px solid #30303d; color: #b9b9c4; padding: 2rem; text-align: center; }
 @media (max-width: 600px) { .hero-container { min-height: 68vh; } .catalogue { padding: 3.5rem 1.25rem; } }
