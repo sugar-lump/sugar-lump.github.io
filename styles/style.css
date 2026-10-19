@@ -13,6 +13,7 @@ a:hover, a:focus-visible { color: #92f1eb; }
 .tagline { font-size: clamp(1.6rem, 5.33vw, 3.47rem); letter-spacing: -0.06em; line-height: 0.98; margin: 0.8rem 0 1.25rem; paint-order: stroke fill; -webkit-text-stroke: 1px #000; }
 .intro { color: #e4e4e9; font-size: 1.1rem; line-height: 1.6; margin: 0 auto; max-width: 39rem; }
 .resource-links, .card-links { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1.5rem 0 0; }
+.adventure-links { margin-top: 0.75rem; }
 .catalogue { margin: 0 auto; max-width: 76rem; padding: 5rem 2rem; }
 .catalogue h2 { font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -0.04em; margin: 0.35rem 0 0; }
 .catalogue-intro { color: #b9b9c4; line-height: 1.6; max-width: 45rem; }
